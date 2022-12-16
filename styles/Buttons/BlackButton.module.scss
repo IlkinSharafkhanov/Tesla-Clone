@@ -1,0 +1,30 @@
+.button{
+    cursor: pointer;
+    width: 264px;
+    margin: 0px 20px 0px 0px;
+    padding: 10px 24px 10px 24px;
+    background-color: rgba(23, 26, 32, 0.8);
+    font-size: 14px;
+    color: white;
+    border: none;
+    border-radius: 4px;
+}
+
+@media (max-width: 839px) {
+    .button{
+      width: 188px;
+    }
+  }
+
+  @media (max-width: 699px) {
+    .button{
+      width: 39%;
+    }
+  }
+
+  @media (max-width: 599px) {
+    .button{
+      margin: 0px 20px;
+      width: 100%;
+    }
+  }

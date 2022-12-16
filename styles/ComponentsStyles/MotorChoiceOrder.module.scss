@@ -1,0 +1,120 @@
+@import "../mixins.scss";
+
+.motorChoiceOrder{
+    @include centering;
+    justify-content: unset;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    button{
+        width: 145px;
+        margin: 24px 0;
+    }
+    .choiceHeading{
+        text-align: center;
+        h1{
+            padding: 32px 0 8px;
+            font-size: 40px;
+            font-weight: 300;
+            letter-spacing: 2px;
+        }
+        p{
+            color: #393C41;
+            letter-spacing: 1.4px;
+            font-size: 14px;
+            padding-bottom: 8px;
+        }
+        a{
+            color: #393C41;
+            border-bottom: 1px solid #393C41;
+            transition: 0.4s ease;
+            text-decoration: none;
+        }
+        a:hover{
+            border-bottom: 2px solid #393C41;
+        }
+        .info{
+            @include centering;
+            column-gap: 5px;
+            padding-bottom: 32px;
+            svg{
+                width: 18px;
+                height: 18px;
+            }
+        }
+    }
+    .priceSelector{
+        @include centering;
+        width: 100%;
+        height: 40px;
+        background-color: rgba(244, 244, 244, 0.65);
+        padding: 4px;
+        border-radius: 5px;
+        column-gap: 15px;
+        span{
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 13px;
+            letter-spacing: 1.4px;
+            padding: 8px 12px;
+        }
+    }
+    .generalInfo{
+        padding: 24px 0;
+        @include centering;
+        column-gap: 25px;
+        .infoCard{
+            text-align: center;
+            h3{
+                font-size: 24px;
+                font-weight: 300;
+                padding-bottom: 5px;
+            }
+            span{
+                font-size: 12px;
+            }
+        }
+    }
+    .motorSelector{
+        width: 100%;
+        p{
+            padding: 10px 0;
+            text-align: center;
+            color: #393C41;
+            font-size: 12px;
+            opacity: 0.6;
+            letter-spacing: 1.1px;
+            span{
+                cursor: pointer;
+                border-bottom: 1px solid #393C41;
+            }
+        }
+        .motorSelection{
+            width: 100%;
+            h4{
+                padding: 10px 0;
+            }
+            
+            .simpleS{
+                cursor: pointer;
+                @include centering;
+                padding: 0 10px;
+                justify-content: space-between;
+                width: 100%;
+                height: 53px;
+                border: 1px solid black;
+                border-radius: 5px;
+            }
+            .plaidS{
+                cursor: pointer;
+                @include centering;
+                padding: 0 10px;
+                justify-content: space-between;
+                width: 100%;
+                height: 53px;
+                border: 1px solid black;
+                border-radius: 5px;
+            }
+        }
+    }
+}

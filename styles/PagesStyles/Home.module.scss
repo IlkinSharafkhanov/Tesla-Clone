@@ -1,0 +1,350 @@
+@import "../mixins.scss";
+
+.container{
+  height: 100vh;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
+  transition: all 0.5s ease-in-out;
+  .homeModel3 {
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-image: url("../../public/images/model3_bg.jpeg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    .model3desc {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      margin-top: 100px;
+      margin-bottom: 140px;
+      h2{
+        font-weight: 400;
+        font-size: 40px;
+        color: #171A20;
+        
+      }
+      p{
+        font-size: 14px;
+        font-weight: 300;
+        color: #171A20;
+        a{
+          text-decoration: none;
+          border-bottom: 1px solid black;
+          color: #171A20;
+          transition: .08s ease;
+        }
+        a:hover{
+          border-bottom: 2px solid black;
+        }
+      }
+    }
+    .homeButtons{
+      display: flex;
+      flex-wrap: wrap;
+      width: 100%;
+      justify-content: center;
+      margin-top: 220px;
+    }
+    .scroller{
+      a{
+        color: black;
+        span{
+          cursor: pointer;
+          svg{
+            font-size: 24px;
+            animation: bounce 2s;
+            animation-delay: 2s;
+            animation-iteration-count: infinite;
+          }
+  
+          @keyframes bounce {
+            0%,
+            25%,
+            50%,
+            75%,
+            100% {
+              transform: translateY(0);
+            }
+            40% {
+              transform: translateY(-5px);
+            }
+            60% {
+              transform: translateY(-5px);
+            }
+          }
+      }
+        
+      }
+    }
+  }
+  
+  .homeModelY {
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-image: url("../../public/images/modely-bg.jpeg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    .modelydesc {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      margin-top: 100px;
+      margin-bottom: 140px;
+      h2{
+        font-weight: 400;
+        font-size: 40px;
+        color: #171A20;
+        
+      }
+      p{
+        font-size: 14px;
+        font-weight: 300;
+        color: #171A20;
+        a{
+          text-decoration: none;
+          border-bottom: 1px solid black;
+          color: #171A20;
+          transition: .08s ease;
+        }
+        a:hover{
+          border-bottom: 2px solid black;
+        }
+      }
+    }
+    .homeButtons{
+      display: flex;
+      flex-wrap: wrap;
+      width: 100%;
+      justify-content: center;
+      margin-top: 220px;
+    }
+  }
+  
+  .homeModelS {
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-image: url("../../public/images/modelsbg.jpeg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    .modelsdesc {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      margin-top: 100px;
+      margin-bottom: 140px;
+      h2{
+        font-weight: 400;
+        font-size: 40px;
+        color: #171A20;
+        
+      }
+      p{
+        font-size: 14px;
+        font-weight: 300;
+        color: #171A20;
+        a{
+          text-decoration: none;
+          border-bottom: 1px solid black;
+          color: #171A20;
+          transition: .08s ease;
+        }
+        a:hover{
+          border-bottom: 2px solid black;
+        }
+      }
+    }
+    .homeButtons{
+      display: flex;
+      flex-wrap: wrap;
+      width: 100%;
+      justify-content: center;
+      margin-top: 220px;
+    }
+  }
+  
+  .homeModelX {
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-image: url("../../public/images/modelx-bg.jpeg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    .modelxdesc {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      margin-top: 100px;
+      margin-bottom: 140px;
+      h2{
+        font-weight: 400;
+        font-size: 40px;
+        color: #171A20;
+        
+      }
+      p{
+        font-size: 14px;
+        font-weight: 300;
+        color: #171A20;
+        a{
+          text-decoration: none;
+          border-bottom: 1px solid black;
+          color: #171A20;
+          transition: .08s ease;
+        }
+        a:hover{
+          border-bottom: 2px solid black;
+        }
+      }
+    }
+    .homeButtons{
+      display: flex;
+      flex-wrap: wrap;
+      width: 100%;
+      justify-content: center;
+      margin-top: 220px;
+    }
+  }
+  
+  .solarPanel {
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-image: url("../../public/images/solarpanels-bg.jpeg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    .solarPanelDesc {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      margin-top: 100px;
+      margin-bottom: 140px;
+      h2{
+        font-weight: 400;
+        font-size: 40px;
+        color: #171A20;
+        
+      }
+      p{
+        font-size: 14px;
+        font-weight: 300;
+        color: #171A20;
+      }
+    }
+    .homeButtons{
+      display: flex;
+      flex-wrap: wrap;
+      width: 100%;
+      justify-content: center;
+      margin-top: 220px;
+    }
+  }
+  
+  .solarRoof {
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-image: url("../../public/images/solarroof-bg.jpeg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    .solarRoofDesc {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      margin-top: 100px;
+      margin-bottom: 140px;
+      h2{
+        font-weight: 400;
+        font-size: 40px;
+        color: #171A20;
+        
+      }
+      p{
+        font-size: 14px;
+        font-weight: 300;
+        color: #171A20;
+      }
+    }
+    .homeButtons{
+      display: flex;
+      flex-wrap: wrap;
+      width: 100%;
+      justify-content: center;
+      margin-top: 220px;
+    }
+  }
+  
+  .accessories {
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-image: url("../../public/images/accessories-bg.jpeg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    .accessoriesDesc {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      margin-top: 100px;
+      margin-bottom: 140px;
+      h2{
+        font-weight: 400;
+        font-size: 40px;
+        color: #171A20;
+        
+      }
+      p{
+        font-size: 14px;
+        font-weight: 300;
+        color: #171A20;
+      }
+    }
+    .homeButtons{
+      display: flex;
+      flex-wrap: wrap;
+      width: 100%;
+      justify-content: center;
+      margin-top: 220px;
+    }
+  }
+}
+
+

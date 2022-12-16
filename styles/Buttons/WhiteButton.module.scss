@@ -1,0 +1,34 @@
+.button {
+  cursor: pointer;
+  width: 264px;
+  margin: 3px;
+  padding: 10px 24px 10px 24px;
+  background-color: rgba(244, 244, 244, 0.65);
+  font-size: 14px;
+  color: black;
+  border: none;
+  border-radius: 4px;
+  transition: 0.4s ease;
+}
+
+.button:hover{
+  background-color: rgba(244, 244, 244, 1);
+}
+
+@media (max-width: 839px) {
+  .button {
+    width: 188px;
+  }
+}
+@media (max-width: 699px) {
+  .button {
+    width: 39%;
+  }
+}
+
+@media (max-width: 599px) {
+  .button {
+    margin: 10px 20px 0 20px;
+    width: 100%;
+  }
+}

@@ -9,8 +9,23 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@emotion/react": "^11.10.5",
+    "@emotion/styled": "^11.10.5",
+    "@fortawesome/fontawesome-svg-core": "^6.2.0",
+    "@fortawesome/free-solid-svg-icons": "^6.2.0",
+    "@fortawesome/react-fontawesome": "^0.2.0",
+    "@mui/icons-material": "^5.10.16",
+    "@mui/material": "^5.10.16",
+    "aos": "^3.0.0-beta.6",
     "next": "13.0.3",
-    "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "next-videos": "^1.5.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-icons": "^4.7.1",
+    "swiper": "^8.4.5",
+    "video-react": "^0.16.0"
+  },
+  "devDependencies": {
+    "sass": "^1.56.1"
   }
 }

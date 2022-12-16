@@ -1,0 +1,87 @@
+@import "../mixins.scss";
+
+.container {
+  transform: translateX(100%);  
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  width: 311px;
+  height: 100vh;
+  position: fixed;
+  flex-direction: column;
+  background-color: white;
+  right: 0;
+  top: 0;
+  z-index: 3;
+  transition: all 0.5s ease-in-out;
+  .burgerMenu{
+    display: flex;
+    flex-direction: column;
+    row-gap: 25px;
+    .closeIcon{
+        display: flex;
+        padding: 20px;
+        justify-content: flex-end;
+        font-size: 18px;
+        svg{
+            padding: 8px;
+        }
+    }
+    nav{
+        padding: 4px 32px 48px;
+        ul{
+            display: flex;
+            flex-direction: column;
+            row-gap: 15px;
+            font-size: 14px;
+            font-weight: 400;
+            list-style: none;
+            li{
+
+            }
+        }
+    }
+  }
+}
+
+.activeContainer{
+  transform: translateX(0%);  
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  width: 311px;
+  height: 100vh;
+  position: fixed;
+  flex-direction: column;
+  background-color: white;
+  right: 0;
+  top: 0;
+  z-index: 3;
+  transition: all 0.5s ease-in-out;
+  overflow: scroll;
+  scroll-behavior: smooth;
+  .burgerMenu{
+    display: flex;
+    flex-direction: column;
+    row-gap: 25px;
+    .closeIcon{
+        display: flex;
+        padding: 20px;
+        justify-content: flex-end;
+        font-size: 18px;
+        svg{
+            padding: 8px;
+        }
+    }
+    nav{
+        padding: 4px 32px 48px;
+        ul{
+            display: flex;
+            flex-direction: column;
+            row-gap: 15px;
+            font-size: 14px;
+            font-weight: 400;
+            list-style: none;
+            li{
+
+            }
+        }
+    }
+  }
+}

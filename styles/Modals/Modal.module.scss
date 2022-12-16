@@ -1,0 +1,51 @@
+
+.styleForIcon{
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 55px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  background-color: white;
+  border-radius: 50%;
+  top: 85%;
+  left: 91%;
+  position: fixed;
+  transform: scale(1);
+}
+
+.styleForIcon:hover{
+  background-color: white;
+}
+
+.style{
+    display: flex;
+  flex-direction: column;
+  width: 400px;
+  height: 75%;
+  position: absolute;
+  top: 60%;
+  left: 83%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  border-radius: 15px;
+  padding: 24px;
+}
+
+@media (max-width: 759px){
+  .styleForIcon{
+    left: 90%;
+  }
+}
+
+@media (max-width: 669px){
+    .styleForIcon{
+      left: 89%;
+    }
+  }
+
+  @media (max-width: 599px){
+    .styleForIcon{
+      left: 86%;
+    }
+  }

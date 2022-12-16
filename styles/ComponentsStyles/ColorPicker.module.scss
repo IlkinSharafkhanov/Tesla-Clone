@@ -1,0 +1,202 @@
+@import "../mixins.scss";
+
+.colorContainer {
+  @include centering;
+  flex-direction: column;
+  width: 100%;
+  .paintWheels {
+    @include centering;
+    flex-direction: column;
+    height: 100vh;
+    .paint {
+      @include centering;
+      flex-direction: column;
+      margin: 48px 0 90px;
+      p {
+        span {
+          margin-left: 5px;
+          font-weight: 300;
+        }
+      }
+      h2 {
+        font-weight: 400;
+        font-size: 28px;
+        padding: 32px 0 8px;
+      }
+      .colors {
+        @include centering;
+        padding: 16px 0;
+        column-gap: 15px;
+        div {
+          cursor: pointer;
+          padding: 3px;
+          border: none;
+          width: 40px;
+          height: 40px;
+          border-radius: 50%;
+          img {
+            object-fit: cover;
+            width: 100%;
+            border-radius: 50%;
+            height: 100%;
+          }
+        }
+      }
+    }
+    .wheels {
+      @include centering;
+      flex-direction: column;
+      margin: 48px 0 90px;
+      button {
+        width: 145px;
+        margin: 24px 0;
+      }
+      h2 {
+        font-weight: 400;
+        font-size: 28px;
+        padding: 32px 0 8px;
+      }
+      p {
+        margin-bottom: 10px;
+        span {
+          margin-left: 5px;
+          font-weight: 300;
+          font-size: 14px;
+        }
+      }
+      span {
+        text-align: center;
+        color: #393c41;
+        font-size: 12px;
+        opacity: 0.6;
+        letter-spacing: 1.1px;
+        margin-bottom: 5px;
+      }
+      .wheelTypes {
+        @include centering;
+        padding: 16px 0;
+        column-gap: 15px;
+      }
+      .standard {
+        img {
+          cursor: pointer;
+          border-radius: 50%;
+          width: 40px;
+          height: 40px;
+          object-fit: cover;
+        }
+      }
+      .fancy {
+        img {
+          cursor: pointer;
+          border-radius: 50%;
+          width: 40px;
+          height: 40px;
+          object-fit: cover;
+        }
+      }
+    }
+  }
+  .interiorEnhancedAP {
+    height: 100vh;
+    @include centering;
+    flex-direction: column;
+    justify-content: space-around;
+    .interior {
+      @include centering;
+      flex-direction: column;
+      p {
+        margin-bottom: 5px;
+        span {
+          margin-left: 5px;
+          font-weight: 300;
+          color: #393c41;
+        }
+      }
+      button {
+        width: 145px;
+        margin: 24px 0;
+      }
+      span {
+        margin-left: 5px;
+        font-weight: 300;
+        color: #393c41;
+      }
+      h2 {
+        font-weight: 400;
+        font-size: 28px;
+      }
+      .interiorColors {
+        @include centering;
+        padding: 16px 0;
+        column-gap: 15px;
+        div {
+          padding: 3px;
+          border: none;
+          cursor: pointer;
+          width: 40px;
+          height: 40px;
+          border-radius: 50%;
+          img {
+            object-fit: cover;
+            width: 100%;
+            border-radius: 50%;
+            height: 100%;
+          }
+        }
+      }
+    }
+    .enhancedAP {
+      .enhancedHeading {
+        text-align: center;
+        padding-bottom: 10px;
+        h2 {
+          font-weight: 400;
+          font-size: 28px;
+          padding: 32px 0 8px;
+        }
+      }
+      ul {
+        padding-left: 24px;
+        padding-bottom: 15px;
+        li {
+          color: #393c41;
+          letter-spacing: 1.2px;
+          font-weight: 300;
+          margin-bottom: 8px;
+        }
+      }
+      .buttons {
+        width: 100%;
+        @include centering;
+        column-gap: 10px;
+        button {
+          cursor: pointer;
+          width: 145px;
+          height: 32px;
+        }
+        .blueButton {
+          background-color: #3e6ae1;
+          color: white;
+          border-radius: 4px;
+          border: none;
+        }
+        .remove {
+          cursor: pointer;
+          margin: 3px;
+          padding: 10px 24px 10px 24px;
+          background-color: rgba(244, 244, 244, 0.65);
+          font-size: 14px;
+          color: black;
+          border: none;
+          border-radius: 4px;
+          transition: 0.4s ease;
+        }
+
+        .button:hover {
+          background-color: rgba(244, 244, 244, 1);
+        }
+      }
+    }
+  }
+}

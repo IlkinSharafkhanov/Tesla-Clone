@@ -1,0 +1,37 @@
+.footer{
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   ul{
+    display: flex;
+    list-style: none;
+    column-gap: 15px;
+    li{
+        font-size: 12px; 
+        a{
+            text-decoration: none;
+            color: #5c5E62;
+        }
+    }
+   } 
+}
+
+.activeFooter{
+    display: none; 
+}
+
+@media (max-width: 699px) {
+    .footer{
+        height: auto;
+        padding: 40px 0px 60px 0px;
+        ul{
+            flex-direction: column;
+            row-gap: 8px;
+            text-align: center;
+            .hideResp{
+                display: none;
+            }
+        }
+    }
+}

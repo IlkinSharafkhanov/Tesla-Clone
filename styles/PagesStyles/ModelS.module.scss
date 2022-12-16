@@ -1,0 +1,1808 @@
+@import "../mixins.scss";
+@import "~video-react/styles/scss/video-react";
+.container {
+  .modelS {
+    @include centering;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100vh;
+    padding-top: 60px;
+    background: linear-gradient(
+        180deg,
+        rgba(29, 37, 71, 0) 68%,
+        rgba(0, 0, 0, 1) 94%
+      ),
+      url("../../public/images/model_s_welcome.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    .modelName {
+      text-align: center;
+      padding-bottom: 290px;
+      h1 {
+        font-size: 40px;
+        color: #171a17;
+        font-weight: 400;
+      }
+      span {
+        font-size: 17px;
+        color: #171a17;
+        font-weight: 300;
+      }
+    }
+    .welcomeDesc {
+      display: flex;
+      column-gap: 70px;
+      color: white;
+      .welcomeDescLeft {
+        display: flex;
+        column-gap: 70px;
+        .welcomeStat {
+          text-align: center;
+          h3 {
+            font-weight: 300;
+            font-size: 28px;
+          }
+          span {
+            font-size: 12px;
+            font-weight: 300;
+          }
+        }
+      }
+    }
+  }
+  .interiorHeading {
+    @include centering;
+    background-color: black;
+    padding: 48px 0;
+    h2 {
+      padding: 32px 0 8px 0;
+      font-size: 28px;
+      color: white;
+    }
+  }
+  .interiorBackground {
+    height: 100vh;
+    background: linear-gradient(
+        180deg,
+        rgba(0, 0, 0, 1) 6%,
+        rgba(29, 37, 71, 0) 24%
+      ),
+      url("../../public/images/model_s_interior.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .dashboardInfo {
+    @include centering;
+    flex-direction: column;
+    padding: 64px 48px 64px;
+    background-color: #000;
+    width: 100%;
+    .videoSlider {
+      @include centering;
+      height: 560px;
+      width: 100%;
+      border-radius: 25px;
+      padding-bottom: 48px;
+      video {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        border-radius: 25px;
+      }
+    }
+    .videoController {
+      width: 640px;
+      padding-bottom: 64px;
+      .videoSelector {
+        display: flex;
+        column-gap: 8px;
+        .selector {
+          cursor: pointer;
+          width: 12px;
+          height: 12px;
+          border-radius: 50%;
+          background-color: #5c5e62;
+          transition: 0.4s ease;
+        }
+        .activeSelector {
+          cursor: pointer;
+          width: 12px;
+          height: 12px;
+          border-radius: 50%;
+          background-color: white;
+          transition: 0.4s ease;
+        }
+      }
+      .videoDesc {
+        height: 135px;
+        color: white;
+        transition: 0.4s ease;
+        h3 {
+          padding: 16px 0 16px;
+          font-size: 17px;
+        }
+        span {
+          font-size: 14px;
+          padding: 24px 0 14px;
+          font-weight: 300;
+        }
+      }
+    }
+  }
+  .generalInfoCards {
+    padding: 0 160px 48px;
+    background-color: #000;
+    @include centering;
+    .infoCards {
+      width: 100%;
+      @include centering;
+      flex-direction: column;
+      #infoCard3{
+        flex-direction: row-reverse;
+        #imageHolderRev{
+          margin-right: 0px;
+          margin-left: 130px;
+        }
+      }
+      .infoCard {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        height: 300px;
+        color: white;
+        .imageHolder {
+          height: 100%;
+          width: 55%;
+          margin-right: 130px;
+          img {
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+          }
+        }
+        .infoCardDesc {
+          width: 45%;
+          display: flex;
+          flex-direction: column;
+          row-gap: 14px;
+          h4 {
+            font-size: 14px;
+          }
+          p {
+            font-size: 14px;
+            font-weight: 300;
+          }
+        }
+      }
+      #infoCard2 {
+        flex-direction: row-reverse;
+      }
+    }
+  }
+  .modelStats {
+    @include centering;
+    justify-content: unset;
+    flex-direction: column;
+    height: 100vh;
+    width: 100%;
+    .powerStatsContainer {
+      @include centering;
+      flex-direction: column;
+      justify-content: flex-end;
+      width: 100%;
+      height: 70%;
+      background-image: linear-gradient(
+          180deg,
+          rgba(29, 37, 71, 0) 95%,
+          rgba(0, 0, 0, 0.3) 100%
+        ),
+        url("../../public/images/power_stats_bg.jpg");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      .powerStats {
+        display: flex;
+        column-gap: 150px;
+        margin-bottom: 40px;
+        color: white;
+        .powerStat {
+          text-align: center;
+          h3 {
+            font-size: 28px;
+          }
+          span {
+            font-size: 12px;
+            font-weight: 300;
+          }
+        }
+      }
+    }
+    .plaidInfo {
+      width: 100%;
+      @include centering;
+      flex-direction: column;
+      align-items: unset;
+      padding: 48px 160px 48px 160px;
+      .plaidInfoUp {
+        display: flex;
+        width: 100%;
+        p {
+          font-size: 14px;
+          color: #393c41;
+          font-weight: 300;
+          span {
+            cursor: pointer;
+            border-bottom: 1px solid black;
+            transition: 0.1s ease;
+          }
+          span:hover {
+            border-bottom: 2px solid black;
+          }
+        }
+        .plaidInfoSubhead {
+          width: 75%;
+          span {
+            font-size: 17px;
+            font-weight: 300;
+            color: #171a17;
+          }
+          h2 {
+            font-size: 28px;
+            margin-bottom: 32px;
+            font-weight: 400;
+          }
+        }
+      }
+      .plaidInfoDown {
+        width: 100%;
+        .plaidInfoButtons{
+          display: flex;
+          column-gap: 20px;
+          width: 35%;
+          button {
+            width: 204px;
+          }
+        }
+      }
+    }
+  }
+  .powertrain {
+    padding: 140px 48px 64px;
+    background-color: rgba(244, 244, 244, 0.65);
+    .powertrainDesc {
+      padding-left: 102px;
+      padding-right: 550px;
+      h2 {
+        font-size: 28px;
+        color: #171a17;
+        margin-bottom: 32px;
+      }
+      p {
+        font-size: 14px;
+        font-weight: 300;
+        color: #393c41;
+      }
+    }
+    .powertrainSlide {
+      margin-top: 50px;
+      background-color: white;
+      height: 733px;
+      border-radius: 25px;
+      img {
+        object-fit: cover;
+        height: 100%;
+        width: 100%;
+        border-radius: 25px;
+      }
+    }
+    .powertrainSelector {
+      width: 100%;
+      padding: 48px 102px;
+      display: flex;
+      column-gap: 30px;
+      .activePowertrainSelectorSimple {
+        cursor: pointer;
+        width: 49%;
+        border-top: 3px solid #171a17;
+        padding-top: 20px;
+        transition: 0.3s ease;
+        h3 {
+          font-size: 17px;
+          font-weight: 300;
+        }
+        p {
+          padding-top: 30px;
+          padding-bottom: 50px;
+          font-size: 14px;
+          font-weight: 300;
+        }
+        .powerStats {
+          display: flex;
+          column-gap: 50px;
+          margin-bottom: 40px;
+          .powerStat {
+            h3 {
+              font-size: 28px;
+            }
+            span {
+              font-size: 12px;
+              font-weight: 300;
+            }
+          }
+        }
+      }
+      .powertrainSelectorSimple {
+        cursor: pointer;
+        width: 49%;
+        opacity: 0.6;
+        color: #5c5e62;
+        border-top: 1px solid #5c5e62;
+        padding-top: 20px;
+        transition: 0.3s ease;
+        h3 {
+          font-size: 17px;
+          font-weight: 300;
+        }
+        p {
+          padding-top: 30px;
+          padding-bottom: 50px;
+          font-size: 14px;
+          font-weight: 300;
+        }
+        .powerStats {
+          display: flex;
+          column-gap: 50px;
+          margin-bottom: 40px;
+          .powerStat {
+            h3 {
+              font-size: 28px;
+            }
+            span {
+              font-size: 12px;
+              font-weight: 300;
+            }
+          }
+        }
+      }
+      .activePowertrainSelectorPlaid {
+        cursor: pointer;
+        width: 49%;
+        border-top: 3px solid #171a17;
+        padding-top: 20px;
+        transition: 0.3s ease;
+        h3 {
+          font-size: 17px;
+          font-weight: 300;
+        }
+        p {
+          padding-top: 30px;
+          padding-bottom: 33px;
+          font-size: 14px;
+          font-weight: 300;
+        }
+        .powerStats {
+          display: flex;
+          column-gap: 50px;
+          margin-bottom: 40px;
+          .powerStat {
+            h3 {
+              font-size: 28px;
+            }
+            span {
+              font-size: 12px;
+              font-weight: 300;
+            }
+          }
+        }
+      }
+      .powertrainSelectorPlaid {
+        transition: 0.3s ease;
+        cursor: pointer;
+        width: 49%;
+        opacity: 0.6;
+        color: #5c5e62;
+        border-top: 1px solid #5c5e62;
+        padding-top: 20px;
+        h3 {
+          font-size: 17px;
+          font-weight: 300;
+        }
+        p {
+          padding-top: 30px;
+          padding-bottom: 33px;
+          font-size: 14px;
+          font-weight: 300;
+        }
+        .powerStats {
+          display: flex;
+          column-gap: 50px;
+          margin-bottom: 40px;
+          .powerStat {
+            h3 {
+              font-size: 28px;
+            }
+            span {
+              font-size: 12px;
+              font-weight: 300;
+            }
+          }
+        }
+      }
+    }
+  }
+  .modelExterior {
+    @include centering;
+    justify-content: unset;
+    flex-direction: column;
+    height: 100vh;
+    width: 100%;
+    background-color: #000;
+    .modelExteriorContainer {
+      @include centering;
+      flex-direction: column;
+      justify-content: flex-end;
+      width: 100%;
+      height: 70%;
+      background-image: linear-gradient(
+          180deg,
+          rgba(29, 37, 71, 0) 95%,
+          rgba(0, 0, 0, 0.3) 100%
+        ),
+        url("../../public/images/Model-S-Exterior-Hero-Desktop-Global.jpg");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    .designInfo {
+      width: 100%;
+      @include centering;
+      flex-direction: column;
+      align-items: unset;
+      padding: 48px 160px 48px 160px;
+      color: white;
+      .designInfoUp {
+        display: flex;
+        width: 100%;
+        p{
+          font-size: 14px;
+          color: white;
+          font-weight: 300;
+        }
+        .designSubheading{
+          width: 75%;
+          span {
+            font-size: 17px;
+            font-weight: 300;
+          }
+          h2 {
+            font-size: 28px;
+            margin-bottom: 32px;
+            font-weight: 400;
+          }
+        }
+        
+      }
+      .designInfoDown{
+        width: 100%;
+        .designInfoButtons {
+          display: flex;
+          column-gap: 20px;
+          width: 35%;
+          button {
+            width: 204px;
+          }
+        }
+      }
+    }
+  }
+  .travelDistance {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    .travelDistanceLeft {
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      height: 100%;
+      width: 70%;
+      display: flex;
+      align-items: end;
+      justify-content: center;
+      video {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+      }
+      .powerStats {
+        position: absolute;
+        display: flex;
+        column-gap: 20px;
+        color: white;
+        padding-bottom: 64px;
+        justify-content: center;
+        .powerStat {
+          text-align: center;
+          width: 27%;
+          h3 {
+            font-size: 28px;
+            padding-bottom: 8px;
+            font-weight: 300;
+          }
+          span {
+            padding-right: 10px;
+            width: 100%;
+            font-size: 12px;
+            font-weight: 300;
+          }
+          #responseSpan{
+            display: none;
+          }
+        }
+      }
+    }
+    .travelDistanceRight {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 32px 48px;
+      width: 30%;
+      height: 100%;
+      .rightDesc {
+        padding-top: 20px;
+        span {
+          padding-top: 16px;
+          font-size: 17px;
+          color: #171a17;
+          font-weight: 300;
+        }
+        h2 {
+          font-size: 28px;
+          color: #171a17;
+          padding-bottom: 8px;
+        }
+        p {
+          padding: 16px 0;
+          font-size: 14px;
+          line-height: 1.8;
+          font-weight: 300;
+          color: #393c41;
+        }
+      }
+      .designInfoButtons {
+        display: flex;
+        flex-direction: column;
+        row-gap: 20px;
+        button {
+          width: 100%;
+        }
+      }
+    }
+  }
+  .superchargerInfo {
+    @include centering;
+    flex-direction: column;
+    width: 100%;
+    padding: 150px 48px 48px 48px;
+    .chargeInfoContainer {
+      width: 100%;
+      padding-bottom: 48px;
+      .chargeTitle {
+        padding-left: 96px;
+        padding-bottom: 72px;
+        h2 {
+          font-size: 28px;
+          color: #171a17;
+          margin-bottom: 24px;
+          font-weight: 300;
+          letter-spacing: 1.8px;
+        }
+        span {
+          font-size: 14px;
+          color: #393c41;
+          letter-spacing: 1.2px;
+        }
+      }
+      .chargeSlider {
+        width: 100%;
+        @include centering;
+        flex-direction: column;
+        .sliderPhotoHolder {
+          width: 100%;
+          padding-bottom: 72px;
+          transition: 0.4s ease-in-out;
+          img {
+            width: 100%;
+            border-radius: 25px;
+          }
+        }
+        .photoSelector {
+          width: 70%;
+          @include centering;
+          align-items: unset;
+          column-gap: 24px;
+          padding-bottom: 72px;
+          transition: 0.4s ease-in-out;
+          .photoOption {
+            opacity: 0.3;
+            cursor: pointer;
+            width: 25%;
+            padding-top: 16px;
+            border-top: 1px solid #171a17;
+            color: #171a17;
+            span {
+              font-size: 17px;
+              font-weight: 300;
+              padding-bottom: 24px;
+            }
+            h3 {
+              margin-top: 12px;
+              font-size: 28px;
+            }
+          }
+          .activePhotoOption {
+            cursor: pointer;
+            width: 25%;
+            padding-top: 16px;
+            border-top: 3px solid #171a17;
+            color: #171a17;
+            transition: 0.4s ease-in-out;
+            span {
+              font-size: 17px;
+              font-weight: 300;
+              padding-bottom: 24px;
+            }
+            h3 {
+              margin-top: 12px;
+              font-size: 28px;
+            }
+          }
+        }
+      }
+    }
+  }
+  .modelBody {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    .modelBodyLeft {
+      background-image: url("../../public/images/modelBody.jpg");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+      height: 100%;
+      width: 70%;
+      display: flex;
+      align-items: end;
+      justify-content: center;
+      .spanOne {
+        position: relative;
+        height: 200px;
+        border-left: 2px solid black;
+        left: 10px;
+        bottom: 360px;
+        padding: 5px;
+      }
+      .spanTwo {
+        position: relative;
+        height: 110px;
+        border-left: 2px solid black;
+        bottom: 570px;
+        left: 100px;
+        padding: 5px;
+      }
+      .spanThree {
+        position: relative;
+        height: 120px;
+        border-left: 2px solid black;
+        bottom: 165px;
+        right: 110px;
+        padding: 5px;
+        span {
+          vertical-align: bottom;
+        }
+      }
+    }
+    .modelBodyRight {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 32px 48px;
+      width: 30%;
+      height: 100%;
+      .rightDesc {
+        padding-top: 20px;
+        span {
+          padding-top: 16px;
+          font-size: 17px;
+          color: #171a17;
+          font-weight: 300;
+        }
+        h2 {
+          font-size: 28px;
+          color: #171a17;
+          padding-bottom: 8px;
+        }
+        p {
+          padding: 16px 0;
+          font-size: 14px;
+          line-height: 1.8;
+          font-weight: 300;
+          color: #393c41;
+        }
+      }
+      .designInfoButtons {
+        display: flex;
+        flex-direction: column;
+        row-gap: 20px;
+        button {
+          width: 100%;
+        }
+      }
+    }
+  }
+  .aiVision {
+    @include centering;
+    justify-content: unset;
+    flex-direction: column;
+    height: 100vh;
+    width: 100%;
+    .aiVisionContainer {
+      @include centering;
+      flex-direction: column;
+      align-items: flex-start;
+      width: 100%;
+      height: 70%;
+      background-image: linear-gradient(
+          180deg,
+          rgba(29, 37, 71, 0) 95%,
+          rgba(0, 0, 0, 0.3) 100%
+        ),
+        url("../../public/images/Autopilot-Hero-Vision-Desktop.jpg");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      .aiStats {
+        padding-left: 70px;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        margin-bottom: 40px;
+        color: black;
+        .aiStat {
+          width: 272px;
+          h3 {
+            font-size: 28px;
+            svg {
+              width: 48px;
+              height: 48px;
+            }
+          }
+          span {
+            font-size: 12px;
+            font-weight: 300;
+            width: 100%;
+          }
+          #responseSpan{
+            display: none;
+          }
+        }
+      }
+    }
+    .aiInfo {
+      width: 100%;
+      @include centering;
+      flex-direction: column;
+      align-items: unset;
+      padding: 48px 160px 48px 160px;
+      .aiInfoUp {
+        display: flex;
+        width: 100%;
+        p {
+          font-size: 14px;
+          color: #393c41;
+          font-weight: 300;
+          span {
+            cursor: pointer;
+            border-bottom: 1px solid black;
+            transition: 0.1s ease;
+          }
+          span:hover {
+            border-bottom: 2px solid black;
+          }
+        }
+        .aiInfoSubhead{
+          width: 75%;
+          span {
+            font-size: 17px;
+            font-weight: 300;
+            color: #171a17;
+          }
+          h2 {
+            font-size: 28px;
+            margin-bottom: 32px;
+            font-weight: 400;
+          }
+        }
+        .aiInfoButtons {
+          display: flex;
+          column-gap: 20px;
+          button {
+            width: 204px;
+          }
+        }
+      }
+      .aiInfoDown {
+        width: 100%;
+        .aiInfoButtons{
+          display: flex;
+          column-gap: 20px;
+          width: 35%;
+          button {
+            width: 204px;
+          }
+        }
+      }
+    }
+  }
+  .autopilotFeatures {
+    @include centering;
+    flex-direction: column;
+    width: 100%;
+    padding: 150px 48px 48px 48px;
+    .featuresContainer {
+      width: 100%;
+      padding-bottom: 48px;
+      .featuresTitle {
+        padding: 0px 540px 72px 96px;
+        h2 {
+          font-size: 28px;
+          color: #171a17;
+          margin-bottom: 24px;
+          font-weight: 300;
+          letter-spacing: 1.8px;
+        }
+        span {
+          font-size: 14px;
+          color: #393c41;
+          letter-spacing: 1.2px;
+        }
+      }
+      .featuresSlider {
+        width: 100%;
+        @include centering;
+        flex-direction: column;
+        .featuresVideoHolder {
+          width: 100%;
+          padding-bottom: 72px;
+          transition: 0.4s ease-in-out;
+          video {
+            width: 100%;
+            border-radius: 25px;
+          }
+        }
+        .videoSelector {
+          width: 70%;
+          @include centering;
+          align-items: unset;
+          column-gap: 24px;
+          padding-bottom: 72px;
+          transition: 0.4s ease-in-out;
+          .videoOption {
+            opacity: 0.3;
+            cursor: pointer;
+            width: 25%;
+            padding-top: 16px;
+            border-top: 1px solid #171a17;
+            color: #171a17;
+            span {
+              font-size: 17px;
+              font-weight: 300;
+              padding-bottom: 24px;
+            }
+            h3 {
+              margin-top: 12px;
+              font-size: 28px;
+            }
+          }
+          .activeVideoOption {
+            cursor: pointer;
+            width: 25%;
+            padding-top: 16px;
+            border-top: 3px solid #171a17;
+            color: #171a17;
+            transition: 0.4s ease-in-out;
+            span {
+              font-size: 17px;
+              font-weight: 300;
+              padding-bottom: 24px;
+            }
+            h3 {
+              margin-top: 12px;
+              font-size: 28px;
+            }
+          }
+        }
+      }
+    }
+  }
+  .modelChoice {
+    height: 100vh;
+    width: 100%;
+    background-color: #000;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 85px;
+    button {
+      padding-top: 6px;
+      padding-bottom: 6px;
+      font-weight: 300;
+    }
+    .modelChoiceContainer {
+      padding: 0 140px 0 0;
+      width: 100%;
+      display: flex;
+      .modelChoiceLeft {
+        width: 60%;
+        @include centering;
+        img {
+          width: 65%;
+          height: 50%;
+          object-fit: cover;
+          padding-right: 70px;
+          padding-top: 50px;
+        }
+      }
+      .modelChoiceRight {
+        width: 40%;
+        padding-top: 48px;
+        h2 {
+          font-size: 28px;
+          padding-bottom: 24px;
+          span {
+            font-weight: 300;
+          }
+        }
+        .selectors {
+          display: flex;
+          column-gap: 10px;
+          padding-bottom: 24px;
+          .spanSelector {
+            cursor: pointer;
+            font-size: 12px;
+            text-align: center;
+            width: 235px;
+            padding: 7px 24px;
+            border: 1px solid rgba(244, 244, 244, 0.65);
+            border-radius: 3px;
+            font-weight: 300;
+            transition: 0.4s ease;
+          }
+          .activeSpanSelector {
+            cursor: pointer;
+            font-size: 12px;
+            text-align: center;
+            width: 235px;
+            padding: 7px 24px;
+            border: 2px solid white;
+            border-radius: 3px;
+            font-weight: 300;
+            transition: 0.4s ease;
+          }
+        }
+        .detailsPlaid {
+          display: flex;
+          column-gap: 20px;
+          .powerStatsLeft {
+            width: 240px;
+            display: flex;
+            flex-direction: column;
+            row-gap: 24px;
+            line-height: 1.5;
+            .powerStat {
+              .border {
+                border-top: 1px solid white;
+                width: 30px;
+                margin-bottom: 10px;
+              }
+              font-size: 14px;
+              font-weight: 300;
+            }
+          }
+          .powerStatsRight {
+            width: 240px;
+            display: flex;
+            flex-direction: column;
+            row-gap: 24px;
+            line-height: 1.5;
+            .powerStat {
+              .border {
+                border-top: 1px solid white;
+                width: 30px;
+                margin-bottom: 10px;
+              }
+              font-size: 14px;
+              font-weight: 300;
+            }
+          }
+        }
+
+        .detailsSimple {
+          display: none;
+          column-gap: 20px;
+          .powerStatsLeft {
+            width: 240px;
+            display: flex;
+            flex-direction: column;
+            row-gap: 24px;
+            line-height: 1.5;
+            .powerStat {
+              .border {
+                border-top: 1px solid white;
+                width: 30px;
+                margin-bottom: 10px;
+              }
+              font-size: 14px;
+              font-weight: 300;
+            }
+          }
+          .powerStatsRight {
+            width: 240px;
+            display: flex;
+            flex-direction: column;
+            row-gap: 24px;
+            line-height: 1.5;
+            .powerStat {
+              .border {
+                border-top: 1px solid white;
+                width: 30px;
+                margin-bottom: 10px;
+              }
+              font-size: 14px;
+              font-weight: 300;
+            }
+          }
+        }
+      }
+    }
+  }
+  .modelSEnd {
+    width: 100%;
+    height: 100vh;
+    @include centering;
+    .endLeft {
+      width: 50%;
+      padding-left: 140px;
+      h2 {
+        font-size: 28px;
+        padding-bottom: 30px;
+      }
+      .buttons {
+        display: flex;
+        column-gap: 20px;
+        button {
+          width: 204px;
+        }
+      }
+    }
+    .endRight {
+      width: 50%;
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+}
+
+@media (max-width: 1149px) {
+  .container {
+    .generalInfoCards {
+      padding: 0px 100px 48px;
+      .infoCards {
+        .infoCard {
+          height: 250px;
+          .imageHolder {
+            margin-right: 90px;
+          }
+        }
+      }
+    }
+    .modelStats {
+      .plaidInfo {
+        padding: 48px 96px;
+        .plaidInfoDown{
+          .plaidInfoButtons{
+            flex-direction: column;
+            row-gap: 15px;
+            column-gap: 0;
+            button{
+              height: 40px;
+            }
+          }
+        }
+      }
+    }
+    .powertrain {
+      .powertrainDesc {
+        padding-right: 300px;
+      }
+    }
+    .modelExterior {
+      .designInfo {
+        padding: 48px 96px;
+        .designInfoUp{
+          .designSubheading{
+            width: 100%;
+          }
+        }
+        .designInfoDown{
+          .designInfoButtons{
+            flex-direction: column;
+            row-gap: 15px;
+            column-gap: 0;
+            button{
+              height: 40px;
+            }
+          }
+        }
+      }
+    }
+    .travelDistance {
+      flex-direction: column;
+      .travelDistanceLeft {
+        width: 100%;
+        height: 70%;
+      }
+      .travelDistanceRight {
+        padding-left: 100px;
+        padding-right: 100px;
+        width: 100%;
+        height: 30%;
+        .rightDesc {
+          width: 100%;
+          display: flex;
+          align-items: baseline;
+          .rightDescSubheading {
+            width: 90%;
+          }
+        }
+        .designInfoButtons {
+          width: 20%;
+          button {
+            height: 40px;
+          }
+        }
+      }
+    }
+    .modelBody{
+      flex-direction: column;
+      .modelBodyLeft{
+        width: 100%;
+        height: 60%;
+        span{
+          display: none;
+        }
+      }
+      .modelBodyRight{
+        width: 100%;
+        height: 40%;
+        padding: 0 96px 40px 96px;
+        .rightDesc{
+          display: flex;
+          align-items: baseline;
+          .descSubhead{
+            width: 60%;
+          }
+          p{
+            width: 85%;
+          }
+        }
+        .designInfoButtons{
+          width: 20%;
+          
+            button{
+              height: 40px;
+            }
+          
+        }
+      }
+    }
+    .aiVision {
+      .aiInfo {
+        padding: 48px 96px;
+          .aiInfoUp{
+            .aiInfoSubhead{
+              width: 100%;
+            }
+          }
+        .aiInfoDown{
+          .aiInfoButtons{
+            flex-direction: column;
+            row-gap: 15px;
+            column-gap: 0;
+            button{
+              height: 40px;
+            }
+          }
+        }
+      }
+    }
+    .autopilotFeatures {
+      .featuresContainer {
+        .featuresTitle {
+          padding-right: 300px;
+        }
+      }
+    }
+    .modelChoice {
+      row-gap: 50px;
+    }
+    .modelSEnd {
+      .endLeft {
+        .buttons {
+          flex-direction: column;
+          row-gap: 10px;
+          column-gap: 0;
+          button {
+            height: 40px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 899px) {
+  .container {
+    .modelS {
+      .welcomeDesc {
+        flex-direction: column;
+        column-gap: 0;
+        justify-content: center;
+        align-items: center;
+        row-gap: 30px;
+        .welcomeDescLeft{
+          #peakPower{
+            display: none;
+          }
+        }
+        button {
+          height: 40px;
+          width: 274px;
+        }
+      }
+    }
+    .generalInfoCards {
+      padding: 0 40px 48px;
+      .infoCards{
+        .infoCard{
+          .imageHolder{
+            img{
+              object-fit: contain;
+            }
+          }
+        }
+      }
+    }
+    .modelStats{
+      .plaidInfo{
+        padding: 48px 40px 48px 40px;
+        .plaidInfoUp{
+          flex-direction: column;
+          margin-bottom: 24px;
+          .plaidInfoSubhead{
+            h2{
+              margin-bottom: 10px;
+            }
+          }
+        }
+        .plaidInfoDown{
+          .plaidInfoButtons{
+            width: 40%;
+            flex-direction: column;
+            row-gap: 10px;
+            button{
+              height: 30px;
+            }
+          }
+        }
+      }
+    }
+    .powertrain{
+      .powertrainDesc{
+        padding-left: 50px;
+        padding-right: 100px;
+      }
+      .powertrainSelector{
+        padding: 48px 0;
+      }
+    }
+    .modelExterior{
+      .designInfo{
+        padding: 48px;
+        .designInfoUp{
+          flex-direction: column;
+          margin-bottom: 24px;
+          .designSubheading{
+            h2{
+              margin-bottom: 10px;
+            }
+          }
+        }
+        .designInfoDown{
+          .designInfoButtons{
+            width: 50%;
+            row-gap: 10px;
+          }
+        }
+      }
+    }
+    .travelDistance{
+      .travelDistanceLeft{
+        .powerStats{
+          .powerStat{
+            #simpleSpan{
+              display: none;
+            }
+            #responseSpan{
+              display: block;
+            }
+          }
+        }
+      }
+      .travelDistanceRight{
+        padding-left: 48px;
+        padding-right: 48px;
+        .rightDesc{
+          flex-direction: column;
+          p{
+            padding: 0 0 15px 0;
+          }
+        }
+        .designInfoButtons{
+          width: 27.5%;
+          row-gap: 10px;
+        }
+      }
+    }
+    .modelBody{
+      .modelBodyRight{
+        height: 50%;
+        padding: 0 36px 96px 36px;
+        .rightDesc{
+          width: 100%;
+          flex-direction: column;
+          align-items: unset;
+          .descSubhead{
+            width: 100%;
+          }
+          p{
+            width: 100%;
+          }
+        }
+      }
+    }
+    .superchargerInfo{
+      .chargeInfoContainer{
+        .chargeTitle{
+          padding-left: 40px;
+        }
+        .chargeSlider{
+          .photoSelector{
+            width: 90%;
+          }
+        }
+      }
+    }
+    .aiVision{
+      .aiVisionContainer{
+        align-items: flex-end;
+        .aiStats{
+          padding-top: 150px;
+          padding-left: 0;
+          margin-bottom: 0;
+          width: 100%;
+          height:unset;
+          flex-direction: row;
+          align-items: center;
+          justify-content: center;
+          column-gap: 30px;
+          .aiStat{
+            @include centering;
+            width: 25%;
+            text-align: center;
+            flex-direction: column;
+            column-gap: 20px;
+            #responseSpan{
+              display: block;
+            }
+            #simpleSpan{
+              display: none;
+            }
+          }
+        }
+      }
+      .aiInfo{
+        padding: 48px;
+        .aiInfoUp{
+          flex-direction: column;
+          margin-bottom: 24px;
+          .aiInfoSubhead{
+            h2{
+              margin-bottom: 10px;
+            }
+          }
+        }
+        .aiInfoDown{
+          .aiInfoButtons{
+            width: 45%;
+            row-gap: 10px;
+          }
+        }
+      }
+    }
+    .autopilotFeatures{
+      padding: 150px 10px 10px 10px;
+      .featuresContainer{
+        .featuresTitle{
+          padding: 0px 140px 72px 48px;
+        }
+        .featuresSlider{
+          .videoSelector{
+            width: 90%;
+          }
+        }
+      }
+    }
+    .modelChoice{
+      .modelChoiceContainer{
+        padding: 0 40px 0 0;
+        .modelChoiceLeft{
+          width: 55%;
+        }
+        .modelChoiceRight{
+          width: 45%;
+        }
+      }
+    }
+    .modelSEnd{
+      .endLeft{
+        padding-left: 48px;
+        .buttons{
+          flex-direction: row;
+          row-gap: 0;
+          column-gap: 10px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 639px){
+  .container{
+    .dashboardInfo{
+      .videoController{
+        width: 100%;
+        padding-left: 25px;
+        padding-right: 25px;
+      }
+    }
+    .powertrain{
+      .powertrainSlide{
+        height: 505px;
+      }
+    }
+  }
+}
+
+
+@media (max-width: 599px){
+  .container{
+    .modelS{
+      .welcomeDesc{
+        .welcomeDescLeft{
+          column-gap: 35px;
+          .welcomeStat{
+            h3{
+              font-size: 20px;
+            }
+            span{
+              font-size: 10px;  
+            }
+          }
+        }
+      }
+    }
+    .dashboardInfo{
+      padding: 64px 0;
+      .videoSlider{
+        border-radius: 0;
+        video{
+          border-radius: 0;
+        }
+      }
+    }
+    .generalInfoCards{
+      padding: 0 0 48px 0;
+      .infoCards{
+        .infoCard{
+          height: unset;
+          flex-direction: column;
+          .imageHolder{
+            margin: 0;
+            width: 100%;
+            height: 325px;
+            img{
+              object-fit: cover;
+            }
+          }
+          .infoCardDesc{
+            width: unset;
+            padding: 24px 24px 48px 24px;
+          }
+        }
+        #infoCard3{
+          height: unset;
+          flex-direction: column;
+          #imageHolderRev{
+            margin: 0;
+          }
+        }
+      }
+    }
+    .modelStats{
+      .powerStatsContainer{
+        .powerStats{
+          column-gap: 30px;
+          .powerStat{
+            h3{
+              font-size: 20px;
+              font-weight: 300;
+            }
+            span{
+              font-size: 10px;
+            }
+          }
+        }
+      }
+      .plaidInfo{
+        .plaidInfoDown{
+          .plaidInfoButtons{
+            width: 100%;
+            button{
+              height: 40px;
+              width: 100%;
+              margin: 0;
+            }
+          }
+        }
+      }
+    }
+    .powertrain{
+      padding: 140px 0 64px 0;
+      .powertrainDesc{
+        padding-left: 25px;
+        padding-right: 25px;
+      }
+      .powertrainSlide{
+        img{
+          border-radius: unset;
+        }
+      }
+      .powertrainSelector{
+        padding: 48px 10px;
+        .powertrainSelectorSimple{
+          display: none;
+        }
+        .powertrainSelectorPlaid{
+          display: none;
+        }
+        .activePowertrainSelectorPlaid{
+          width: 100%;
+        }
+        .activePowertrainSelectorSimple{
+          width: 100%;
+        }
+      }
+    }
+    .modelExterior{
+      .designInfo{
+        .designInfoDown{
+          .designInfoButtons{
+            width: 100%;
+            button{
+              width: 100%;
+              height: 40px;
+              margin: 0;
+            }
+          }
+        }
+      }
+    }
+    .travelDistance{
+      .travelDistanceLeft{
+        .powerStats{
+          .powerStat{
+            h3{
+              font-size: 20px;
+            }
+            span{
+              padding: 0;
+              font-size: 10px;
+            }
+          }
+        }
+      }
+      .travelDistanceRight{
+        .designInfoButtons{
+          width: 100%;
+          button{
+            width: 100%;
+            margin: 0;
+            height: 40px;
+          }
+        }
+      }
+    }
+    .modelBody{
+      height: auto;
+      .modelBodyLeft{
+        height: 300px;
+      }
+      .modelBodyRight{
+        height: auto;
+        .designInfoButtons{
+          width: 100%;
+          button{
+            width: 100%;
+            margin: 0;
+            height: 40px;
+          }
+        }
+      }
+    }
+    .superchargerInfo{
+      padding: 150px 0 48px 0;
+      .chargeLearnMore{
+        width: 100%;
+        padding: 0 48px;
+        button{
+          width:100%;
+        }
+      }
+      .chargeInfoContainer{
+        .chargeTitle{
+          padding: 50px;
+          padding-left: 25px;
+        }
+        .chargeSlider{
+          .photoSelector{
+            column-gap: 15px;
+          }
+          .sliderPhotoHolder{
+            img{
+              border-radius: 0;
+            }
+          }
+        }
+      }
+    }
+    .aiVision{
+      .aiInfo{
+        .aiInfoDown{
+          .aiInfoButtons{
+            width: 100%;
+            button{
+              width: 100%;
+              height: 40px;
+              margin: 0;
+            }
+          }
+        }
+      }
+      .aiVisionContainer{
+        .aiStats{
+          .aiStat{
+            width: 15%;
+            h3{
+              font-size: 20px;
+              font-weight: 300;
+              svg{
+                width: 24px;
+                height: 24px;
+              }
+            }
+            #responseSpan{
+              font-size: 10px;
+            }
+          }
+        }
+      }
+    }
+    .autopilotFeatures{
+      .featuresContainer{
+        .featuresTitle{
+          padding: 0 25px 64px 25px;
+        }
+        .featuresSlider{
+          .videoSelector{
+            column-gap: 15px;
+          }
+        }
+      }
+    }
+    .modelChoice{
+      height: auto;
+      padding: 0 25px 0 25px;
+      button{
+        height: 40px;
+        width: 100%;
+      }
+      .modelChoiceContainer{
+        flex-direction: column;
+        padding: 0;
+        height: 100%;
+        .modelChoiceLeft{
+          width: 100%;
+          height: 55%;
+          img{
+            height: 100%;
+            padding: 0;
+            width: 100%;
+          }
+        }
+        .modelChoiceRight{
+          width: 100%;
+          height: 45%;
+          .selectors{
+            width: 100%;
+            .spanSelector{
+              width: 50%;
+            }
+            .activeSpanSelector{
+              width: 50%;
+            }
+          }
+          .detailsPlaid{
+            width: 100%;
+            .powerStatsLeft{
+              width: 50%;
+            }
+            .powerStatsRight{
+              width: 50%;
+            }
+          }
+        }
+      }
+    }
+    .modelSEnd{
+      flex-direction: column;
+      padding: 0 25px 0 25px;
+      .endLeft{
+        padding: 0;
+        width: 100%;
+        .buttons{
+          flex-direction: column;
+          width: 100%;
+          row-gap: 15px;
+          button{
+            width: 100%;
+            height: 40px;
+            margin: 0;
+          }
+        }
+      }
+      .endRight{
+        width: 100%;
+        padding-top: 24px;
+      }
+    }
+  }
+}
